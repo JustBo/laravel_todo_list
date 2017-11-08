@@ -8,6 +8,7 @@
   <body>
     @include('inc.navbar')
     <div class="container">
+      @include('messages')
       @yield('content')
     </div>
     <footer class="text-center">

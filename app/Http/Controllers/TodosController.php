@@ -64,7 +64,8 @@ class TodosController extends Controller
      */
     public function edit($id)
     {
-        //
+      $todo = Todo::findOrFail($id);
+      return view('todos.edit')->with( compact('todo') );
     }
 
     /**
@@ -76,7 +77,13 @@ class TodosController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+      $this->validate($request, [
+        'text' => 'required'
+      ]);
+      //return '214';
+      $todo = Todo::findOrFail($id);
+      $todo->update($request->all());
+      return redirect('/')->with('success','Todo Updated');
     }
 
     /**

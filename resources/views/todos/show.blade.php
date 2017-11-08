@@ -6,4 +6,6 @@
     {{$todo->due}}
   </div>
   <div>{{$todo->body}}</div>
+  <br><br>
+  <a href="/todo/{{$todo->id}}/edit" class="btn btn-default">Edit</a>
 @endsection
