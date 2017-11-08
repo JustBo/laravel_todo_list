@@ -25,7 +25,7 @@ class TodosController extends Controller
      */
     public function create()
     {
-        //
+      return view('todos.create');
     }
 
     /**
@@ -36,7 +36,7 @@ class TodosController extends Controller
      */
     public function store(Request $request)
     {
-        //
+      return '214';
     }
 
     /**

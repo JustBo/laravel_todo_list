@@ -15,7 +15,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="{{Request::is('/') ? 'active' : ''}}"><a href="/">Home</a></li>
-        <li class="{{Request::is('todo/create') ? 'active' : ''}}"><a href="/create">Create Todo</a></li>
+        <li class="{{Request::is('todo/create') ? 'active' : ''}}"><a href="/todo/create">Create Todo</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
